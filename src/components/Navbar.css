@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800;0,9..40,900;1,9..40,800&family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'DM Sans', sans-serif;
+    font-family: 'Inter', sans-serif;
+}
+
+:root{
+    --mainColor: #F0EFE9;
+    --mainColorLight: #5767aa;
+    --secondaryColor: #db2b39;
+    --textColor: black;
+} 
+  
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+    padding: 0 2rem;
+    background-color: var(--mainColor);
+    color: var(--textColor);
+}
+
+nav a{
+    margin: 0 2rem;
+    color: var(--textColor);
+    text-decoration: none;
+}
+
+nav a:hover{
+    color: var(--secondaryColor);
+}
+
+header .nav-btn{
+    padding: 5px;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    outline: var(--textColor);
+    visibility: hidden;
+    opacity: 0;
+    font-size: 1.5rem;
+}
+
+@media only screen and (max-width:1024px ){ 
+    header .nav-btn{ 
+        visibility: visible;
+        opacity: 1;
+    }
+
+    header nav{
+        position: fixed;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 1.5rem;
+        top: 0;
+        left: 0;
+        height: 100%;
+        background-color: var(--mainColor);
+        transition: 1s;
+        transform: translateY(-100vh);
+
+    }
+
+    header .responsive_nav{
+        transform: none;
+
+    }
+
+    nav .nav-close-btn {
+        position: absolute;
+        top: 2rem;
+        right: 2rem;
+    }
+
+    nav a{
+        font-size: 1.5rem;
+    }
+}    
