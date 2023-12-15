@@ -1,19 +1,30 @@
-//Oj vad jag har haft det svårt att förstå JavaScript och detta program. Har startat om flera gånger då min sida bara blir vit efter ett tag 
-// och jag inte listat ut vart jag har lagt fel komponet någonstans.  Det är därför mitt projekt inte är klart. Hade kommit kanske långt innan jag fick problem och bestämmde mig för att 
-// börja om. Och nu är jag lite fastnat. Jag siktar på att göra komplettering. Jag fick hjälp med att göra Footern och Navbaren. 
-import './App.css'
+import './App.css';
+import { Routes, Route, } from 'react-router-dom';
+import Home from "./assets/pages/Home";
+import About from "./assets/pages/About";
+import Contact from "./assets/pages/Contact";
+import Service from "./assets/pages/Service";
+import NotFound from "./assets/pages/NotFound";
+import Footerbody from './body/footerbody'
 
-
-
-import Navbar from './components/Navbar'
-import Footer from './components/Footer'
+import Navbar from './components/Navbar';
+import Footer from './components/Footer';
 
 function App() {
   return ( 
-  <>
-    <Navbar/>
-    <Footer/>
-  </>
+      <div className="App"> 
+        <Navbar/>
+        <Routes>
+            <Route path="/" element={< Home/>} />
+            <Route path="/about" element={< About/>} />
+            <Route path="/contact" element={< Contact/>} />
+            <Route path="/service" element={< Service/>} />
+            <Route path="/notfound" element={< NotFound/>} />
+        </Routes>
+        <Footerbody/>
+        <Footer/>
+        </div>
+   
    )
 }
 

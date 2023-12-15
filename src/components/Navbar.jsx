@@ -1,33 +1,48 @@
-import "./Navbar.css";
-import {useRef} from "react"
-import React, {useState} from 'react'
-import { NavLink, Link } from 'react-router-dom'
-import {FaBars, FaTimes} from "react-icons/fa"
+import React from 'react'
+import { Link } from "react-router-dom"
+import {NavLink} from "react-router-dom"
+import { useState } from 'react'
+import img from '../img/Logo.jpg'
 
-function Navbar () {
-  const navRef = useRef();
+import "./Navbar.css"
 
-  const showNavbar = ()=> {
-      navRef.current.classList.toggle("responsive_nav");
-  }
+import Button from '../components/Buttons/buttons'
 
-    return (
-      <header>
-        <h3>Logo</h3>
-        <nav ref={navRef}>
-          <a href='/#'>Home</a>
-          <a href='/#'>Services</a>
-          <a href='/#'>News</a>
-          <a href='/#'>Contacts</a>
-          <button className="nav-btn nav-close-btn" onClick={showNavbar}>
-              <FaTimes/>
-          </button>
-        </nav>
-        <button className="nav-btn" onClick={showNavbar}>
-          <FaBars/>
-        </button>
-      </header>
-       )
+const Navbar = () => {
+    const [menuOpen, setMenuopen] =useState(false)
+
+  return (
+    <nav>
+        <Link to="/" className="titel">
+            <img src={img} alt=""/>
+        </Link>
+        <div className="menu" onClick={() =>{ 
+            setMenuopen(!menuOpen)
+
+             }}>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul className={menuOpen ? "open" : ""} >
+            <li>
+                <NavLink to="/home">Home</NavLink>
+            </li>
+            <li>
+                <NavLink to="/service">Service</NavLink>
+            </li>
+            <li>
+                 <NavLink to="/news">News</NavLink>
+            </li>
+            <li>
+                <NavLink to="/contact">Contact</NavLink>
+            </li>
+           
+        </ul>
+        <Button text="Login" url="/login"/>
+    </nav>
+    
+  )
 }
 
 export default Navbar

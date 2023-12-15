@@ -1,19 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800;0,9..40,900;1,9..40,800&family=Inter:wght@300;400;500;600;700;800;900&display=swap');
-
-
 .section_padding{
     padding: 4rem 4rem;
 }
 
 .footer{
     background-color: #0E1021;
-
 }
 
 .sb_footer{
     display: flex;
     flex-direction: column;
-
 }
 
 .sb_footer-links{
@@ -22,23 +17,21 @@
     align-items: flex-start;
     flex-direction: row;
     flex-wrap: wrap;
-    text-align: left;
-    margin-bottom: 2rem;
+    width: 100%;
 
 }
 
-.sb_footer-lings_div{
+.sb_footer-links_div{
     width: 150px;
     margin: 1rem;
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
     color: white;
-
 }
 
 a{
-    color: rgb(175,175,179);
+    color: rgb(175, 175, 179);
     text-decoration: none;
 }
 
@@ -49,8 +42,8 @@ a{
 
 .socialmedia img{
     width: 80%;
-
 }
+
 .sb_footer-links_div h4{
     font-size: 14px;
     line-height: 17px;
@@ -74,43 +67,41 @@ a{
 .sb_footer-below-links{
     display: flex;
     flex-direction: row;
-
 }
-
 .sb_footer-below-links p{
     font-size: 13px;
     line-height: 15px;
     margin-left: 2rem;
-    color: white;
+    color: #FFFFFF;
     font-weight: 600;
 }
 
+
 hr{
-    color: white !important;
+    color: #FFFFFF;
     width: 100%;
 }
 
-.sb_footer-copyright{
+.sb_footer-copyright p{
     font-size: 13px;
     line-height: 15px;
-    color: rgb(255,255,255);
+    color:rgb(255,255,255);
     font-weight: 600;
 }
 
-@media screen and (max-width:850px){ 
+@media screen and (max-width: 850px) {
     .sb_footer-heading h1{
         font-size: 44px;
         line-height: 50px;
     }
-
-}   
+}
 
 @media screen and (max-width: 550px) {
     .sb_footer-heading h1{
         font-size: 34px;
         line-height: 42px;
     }
-    
+
     .sb_footer-links div{
         margin: 1rem 0;
     }
@@ -118,7 +109,6 @@ hr{
     .sb_footer-btn p{
         font-size: 14px;
         line-height: 20px;
-
     }
 
     .sb_footer-below{
@@ -129,14 +119,14 @@ hr{
     .sb_footer-below-links{
         flex-direction: column;
     }
+
     .sb_footer-below-links p{
         margin-left: 0rem;
         margin-top: 1rem;
     }
-    
 }
 
-@media screen and (max-width: 400px){
+@media screen and (max-width: 400px) {
     .sb_footer-heading h1{
         font-size: 27px;
         line-height: 38px;
