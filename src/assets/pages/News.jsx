@@ -1,8 +1,15 @@
 import React from 'react'
 
+
 const News = () => {
   return (
-    <div>News</div>
+  <div className='cover'>
+  
+  <main>
+    <h1> News </h1>
+  </main>
+  
+  </div>
   )
 }
 

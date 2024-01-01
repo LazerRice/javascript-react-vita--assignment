@@ -1,8 +1,16 @@
 import React from 'react'
 
+
 const About = () => {
   return (
-    <div>About</div>
+    <div className='cover'>
+    
+    <main>
+      <h1> About </h1>
+    </main>
+    
+    
+    </div>
   )
 }
 
