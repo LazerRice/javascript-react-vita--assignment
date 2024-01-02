@@ -1,4 +1,5 @@
 import React from 'react'
+import Footer from '../../components/Footer'
 
 
 
@@ -9,7 +10,7 @@ const NotFound = () => {
       <section className='notfound-sec'>
       <h1>404 Page not found</h1>
       <p> Unable to find the page.</p>
-      
+      <Footer/>
       </section>
     </main>
    

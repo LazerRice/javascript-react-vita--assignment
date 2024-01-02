@@ -1,22 +1,26 @@
 import React from 'react'
+import './Showcase.css'
 
-import showcaseimg from '../img/showcase-image.svg'
+import showcaseimg from '../assets/img/manglassesread.svg'
+
 
 
 const Showcase = () => {
   return (
-      <div className='showcaseMain'>
-              <h4> We Provide The Best Business Solutions </h4>
-              <p>Establish your vision and value proposition and turn them into testable prototypes.</p>
-              <img src={showcaseimg} alt=""/>
-              
-      </div>
+    <section className="showcase">
+    <div className="container">
+        <div className="content">
+            <h1> We provide The Best business Solitions</h1>
+            <p>Establish your vision and value proposition and turn them into testable prototypes.</p>
+            <img className="showcaseglass" scr={showcaseimg} alt=""/>
+            <a className="btn-theme btn-login" href="#">Get consulting <i className="fa-solid fa-arrow-right"></i></a>
+            <a className="btn-theme btn-login" href="#">Learn more<i className="fa-solid fa-arrow-right"></i></a>
+            
+        </div>
+        
+    </div>
+</section>
 
-
-
-
-
-    
   )
 }
 

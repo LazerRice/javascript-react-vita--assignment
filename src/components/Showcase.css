@@ -1,4 +1,43 @@
 
+.showcase{
+    background-color: #f0efe9;
+
+    .container{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      
+
+
+          .content{
+      
+            h1{
+              font-family: 'DM Sans', sans-serif;
+              font-weight: 700;
+              font-size: 86px;
+            }
+            p{
+              font-size: 20px;
+              padding-top: 50px;
+              margin-bottom: 50px;
+            }
+            a{
+              margin-right: 10px;
+
+            }
+        }
+
+        img{
+          display: none;
+          margin-right: -50px;
+
+          @media(min-width: 1200px){
+            display: block;
+
+          }
+       }
+  }
+ }
 
 
 
