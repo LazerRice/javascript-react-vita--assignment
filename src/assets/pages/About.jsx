@@ -1,15 +1,17 @@
 import React from 'react'
-
+import Header from '../../components/Header'
+import Showcase from '../../components/Showcase'
+import Footer from '../../components/Footer'
 
 const About = () => {
   return (
     <div className='cover'>
+    <Header/>
+    <Showcase/>
+   <main>
     
-    <main>
-      <h1> About </h1>
-    </main>
-    
-    
+   </main>
+   <Footer/>
     </div>
   )
 }

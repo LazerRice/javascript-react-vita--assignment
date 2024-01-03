@@ -1,4 +1,7 @@
 import React from 'react'
+import Header from '../../components/Header'
+import Showcase from '../../components/Showcase'
+import Footer from '../../components/Footer'
 
 
 
@@ -7,12 +10,12 @@ import React from 'react'
 const Contact = () => {
   return (
   <div className='cover'>
-   
-    
-      <main>
-        <h1> Contact</h1>
-      </main>
-   
+   <Header/>
+    <Showcase/>
+   <main>
+     Hallå
+   </main>
+   <Footer/>
   </div> 
   )
 }

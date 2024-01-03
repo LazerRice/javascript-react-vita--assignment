@@ -1,14 +1,17 @@
 import React from 'react'
-
+import Header from '../../components/Header'
+import Showcase from '../../components/Showcase'
+import Footer from '../../components/Footer'
 
 const News = () => {
   return (
   <div className='cover'>
-  
-  <main>
-    <h1> News </h1>
-  </main>
-  
+  <Header/>
+    <Showcase/>
+   <main>
+    
+   </main>
+   <Footer/>
   </div>
   )
 }

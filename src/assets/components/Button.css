@@ -1,0 +1,80 @@
+.btn-theme {
+    background-color: #f9d783;
+    border: 1px solid #f9d783;
+    color: #191919;
+    text-decoration: none;
+    padding: 12px 25px;
+    font-weight: 600;
+    font-size: 16px;
+    border-radius: 25px;
+  }
+  .btn-theme i {
+    margin-left: 8px;
+    font-size: 0.9em;
+  }
+  .btn-theme:hover {
+    background-color: #191919;
+    border: 1px solid #191919;
+    color: #f2f2f2;
+  }
+  
+  .btn-black {
+    background-color: #191919;
+    border: 1px solid #191919;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 12px 25px;
+    font-weight: 600;
+    font-size: 16px;
+    border-radius: 25px;
+  }
+  .btn-black i {
+    margin-left: 8px;
+    font-size: 0.9em;
+  }
+  .btn-black:hover {
+    background-color: #ffffff;
+    border: 1px solid #191919;
+    color: #191919;
+  }
+  
+  .btn-transparent {
+    background-color: transparent;
+    border: 1px solid #191919;
+    color: #191919;
+    text-decoration: none;
+    padding: 12px 25px;
+    font-weight: 600;
+    font-size: 16px;
+    border-radius: 25px;
+  }
+  .btn-transparent i {
+    margin-left: 8px;
+    font-size: 0.9em;
+  }
+  .btn-transparent:hover {
+    background-color: #191919;
+    border: 1px solid #191919;
+    color: #f2f2f2;
+  }
+  
+  .btn-yello-long {
+    background-color: #f9d783;
+    border: 1px solid;
+    color: #191919;
+    text-decoration: none;
+    padding: 12px 518px;
+    font-weight: 600;
+    border-radius: 25px;
+  }
+  .btn-yello-long:hover {
+    background-color: #191919;
+    border: 1px solid #191919;
+    color: #f2f2f2;
+  }
+  
+  .btn-login {
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+  

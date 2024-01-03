@@ -1,5 +1,4 @@
 import React from 'react'
-import Logo from '../assets/img/logotype.svg'
 import './Header.css'
 
 
@@ -7,7 +6,7 @@ const Header = () => {
   return (
     <header>
         <div className="container">
-            <img className='critologo' scr={Logo} alt=""/>
+          <img src="./img/Logo.jpg"/>
             <button className="menu-bars"><i className="fa-solid fa-bars-staggered"></i></button>
             <div className="menu">
                 <div className="top-menu">
@@ -34,10 +33,10 @@ const Header = () => {
                  </div>
                     <div className="main-menu">
                      <nav>
-                        <a href="home.html">home</a>
-                        <a href="service.html">service</a>
-                        <a href="news.html">news</a>
-                        <a href="contact.html">contacts</a>
+                        <a href="home.html">Home</a>
+                        <a href="service.html">Service</a>
+                        <a href="news.html">News</a>
+                        <a href="contact.html">Contacts</a>
                      </nav>
                      <a className="btn-theme btn-login" href="login.html">Login<i className="fa-solid fa-arrow-right"></i></a>
                     </div>

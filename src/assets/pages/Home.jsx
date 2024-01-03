@@ -13,7 +13,7 @@ const Home = () => {
     <Header/>
     <Showcase/>
    <main>
-    <h1>Home</h1>
+    <img src="./img/Logos.png"/>
    </main>
    <Footer/>
     

@@ -10,6 +10,7 @@ const NotFound = () => {
       <section className='notfound-sec'>
       <h1>404 Page not found</h1>
       <p> Unable to find the page.</p>
+      <img src="./img/404monkey.jpg"/>
       <Footer/>
       </section>
     </main>
