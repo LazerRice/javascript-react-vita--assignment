@@ -69,12 +69,12 @@ header {
   header .menu .top-menu .contact-info .content-boxlast {
     border: none;
   }
-  header .menu .top-menu .social-media a {
+  header .menu .top-menu .social-media li {
     color: #191919;
     font-size: 1.3rem;
     margin-left: 12px;
   }
-  header .menu .top-menu .social-media a:hover {
+  header .menu .top-menu .social-media li:hover {
     color: #DAD9D3;
   }
   header .menu .main-menu {
@@ -83,17 +83,17 @@ header {
     align-items: center;
     padding-top: 10px;
   }
-  header .menu .main-menu nav a {
+  header .menu .main-menu nav li {
     display: inline-block;
     color: #191919;
     text-decoration: none;
     margin-right: 35px;
     position: relative;
   }
-  header .menu .main-menu nav a.active {
+  header .menu .main-menu nav li.active {
     font-weight: 500;
   }
-  header .menu .main-menu nav a.active::after, header .menu .main-menu nav a:hover::after {
+  header .menu .main-menu nav li.active::after, header .menu .main-menu nav li:hover::after {
     content: "";
     position: absolute;
     font-weight: 500;

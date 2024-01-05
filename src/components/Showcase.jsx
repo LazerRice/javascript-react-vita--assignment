@@ -17,7 +17,9 @@ const Showcase = () => {
               <Button text="Get Consulting" url="/contact"/>
               <Button text="Learn More" url="/contact"/>
         </div>
-        
+        <div className='sponserbar'>
+          <img src="./img/Logos.png"/>
+     </div>
     </div>
 </section>
 

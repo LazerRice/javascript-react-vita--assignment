@@ -1,12 +1,12 @@
 import React from 'react'
 import './Header.css'
-
+import {NavLink, Link }  from 'react-router-dom'
 
 const Header = () => {
   return (
     <header>
         <div className="container">
-          <img src="./img/Logo.jpg"/>
+          <Link to="/">< img src="./img/Logo.jpg"/></Link>
             <button className="menu-bars"><i className="fa-solid fa-bars-staggered"></i></button>
             <div className="menu">
                 <div className="top-menu">
@@ -33,10 +33,10 @@ const Header = () => {
                  </div>
                     <div className="main-menu">
                      <nav>
-                        <a href="home.html">Home</a>
-                        <a href="service.html">Service</a>
-                        <a href="news.html">News</a>
-                        <a href="contact.html">Contacts</a>
+                        <li><NavLink to ="/">Home</NavLink></li>
+                        <li><NavLink to ="/services">Services</NavLink></li>
+                        <li><NavLink to ="/news">News</NavLink></li>
+                        <li><NavLink to ="/contact">Contact</NavLink></li>
                      </nav>
                      <a className="btn-theme btn-login" href="login.html">Login<i className="fa-solid fa-arrow-right"></i></a>
                     </div>

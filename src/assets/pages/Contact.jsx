@@ -1,7 +1,8 @@
 import React from 'react'
 import Header from '../../components/Header'
-import Showcase from '../../components/Showcase'
+
 import Footer from '../../components/Footer'
+import MessageBox from '../../components/MessageBox'
 
 
 
@@ -11,7 +12,7 @@ const Contact = () => {
   return (
   <div className='cover'>
    <Header/>
-    <Showcase/>
+    <MessageBox/>
    <main>
      Hallå
    </main>
