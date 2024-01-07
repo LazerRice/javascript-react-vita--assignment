@@ -1,7 +1,7 @@
 import ReactDOM from 'react-dom/client'
 import './index.css'
 import { BrowserRouter,Routes, Route, } from 'react-router-dom';
-import { useState } from 'react'
+import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Home from './assets/pages/Home';
 import Contact from './assets/pages/Contact';

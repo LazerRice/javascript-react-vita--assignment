@@ -1,5 +1,5 @@
 .contact {
-  background-color: #f0efe9;
+  background-color: #ffffff;
 }
 
 .container-contact {
@@ -15,7 +15,7 @@
   width: 300px;
   height: 200px;
   margin: 10px;
-  border: 1px solid #DAD9D3;
+  border: 1px solid #52524e;
   padding-bottom: 20px;
 }
 .box .icon {
@@ -60,7 +60,7 @@ textarea {
 }
 
 form {
-  background-color: #ffffff;
+  background-color: #F0EFE9;
   border-radius: 12px;
   padding: 30px;
   width: 100%;

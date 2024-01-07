@@ -8,13 +8,15 @@ import MessageBox from '../../components/MessageBox'
 
 
 
+
 const Contact = () => {
   return (
   <div className='cover'>
    <Header/>
     <MessageBox/>
+  
    <main>
-     Hallå
+     
    </main>
    <Footer/>
   </div> 
