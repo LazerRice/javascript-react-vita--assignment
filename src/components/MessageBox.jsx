@@ -1,44 +1,39 @@
 import React from 'react'
 import './MessageBox.css'
-import {useState } from 'react-router-dom'
+import { useState } from 'react'
+import {useFormik} from 'react'
+import * as Yup from 'yup'
 
 
 
 
 const MessageBox = () => {
-    const[firstName, setFirstName] = useState('')
-    const[firstNameError, setFirstNameError] = useState ('false')
-    const[email, setEmail] = useState('')
-    const[firstEmailError, setEmailError] = useState ('false')
     const[errorMessage, setErrorMessage] = useState ('')
-    
+    const from = useFormik ({
 
-    const handelChange = (e) =>{
-        console.log(e.traget.type)
+        initialValues: {
+            firstName: '',
+            email: '',
+            message: '',
 
-        switch (e.target.name){
-            case 'firstName':
-                setFirstName(e.traget.value)
-                setFirstNameError(validateLength(e.target.value, 1))
-                break
-            case 'email':
-                setEmail(e.traget.value)
-                setEmailError(validateLength(e.target.value, 3))
-                break
-        }
+        },
 
+        validationSchema: Yup.object( {
+                firstName: Yup.string()
+                    .required("You must enter a name")
+                    .min(2, "The name must have atlesat 2 characters"),
+                email: Yup.string()
+                    .required("Please enter your email")
+                    .email("You must enter a valid email"),
 
-    }
-    const validateLength = (value, minLength=1) => {
-        if (value.length < minLength)
-            return true
-        return false
-    }
+        }),
 
+        onSubmit:(values) => { 
+            console.log(values) 
+        } 
 
-    const handelSubmit = (e) => {
-        e.preventDefault()
-    }
+   
+    })
 
   return (
 
@@ -63,20 +58,20 @@ const MessageBox = () => {
          </div>
         
 
-        <form onSubmit={handelSubmit} className='formBox' noValidate>
+        <form onSubmit={from.handelSubmit} className='formBox' noValidate>
 
             {/* Name */}
             <h2>Leave us a message for any information</h2>
             <p className="errorMessage">{errorMessage}</p>
             <div className='inputBox1'></div>
-                <label className={`${firstNameError ? 'error':''}`}>{`Firstname ${firstNameError ? ' måste ange':'' }`}</label>
-                <input type="text" name="firstName" value={firstName} onChange={(e) => handelChange(e)} placeholder="Name" required="required"/>
+                <label>={from.errors.firstName ? form.errors.firstName : 'Firstname'}</label>
+                <input type="text" name="firstName" value={from.values.firstName} onChange={from.handelChange} placeholder="Name" required="required"/>
 
 
 
             {/* Email */}
             <div className='inputBox2'></div>
-                <input type="email" name="email "value={email} onChange={(e) => handelChange(e)} placeholder="Email" required="required"/>
+                <input type="email" name="email" value={from.values.email} onChange={from.handelChange} placeholder="Email" required="required"/>
 
 
             {/* MessageField     */}
